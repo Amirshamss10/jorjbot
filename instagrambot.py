@@ -60,7 +60,7 @@ for i in range(1,100):
     page.click() 
     time.sleep(2) 
     driver.find_element_by_xpath('/html/body/div[5]/div/div/div[3]/button[1]').click() #ok
-   
+driver.close()   
 print('FINISH')
 print(colored('Developer: AmirShamss10','red') )
 
