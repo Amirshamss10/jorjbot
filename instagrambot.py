@@ -17,8 +17,6 @@ except ModuleNotFoundError:
     system('pip3 install termcolor') 
 import time
 
-
-url = 'https://www.instagram.com/accounts/login/?source=auth_switcher' 
 print(colored('i am bot instagram', 'blue') )
 
 time.sleep(3)
@@ -56,10 +54,10 @@ driver.find_element_by_xpath('/html/body/div[1]/section/main/div/header/section/
 time.sleep(3) 
 
 for i in range(1,100):
-    page = driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/ul/div/li['+str(i)+']/div/div[3]/button')
+    page = driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/ul/div/li['+str(i)+']/div/div[3]/button')#list following
     page.click() 
     time.sleep(2) 
-    driver.find_element_by_xpath('/html/body/div[5]/div/div/div[3]/button[1]').click() #ok
+    driver.find_element_by_xpath('/html/body/div[5]/div/div/div[3]/button[1]').click()#unfollow
 driver.close()   
 print('FINISH')
 print(colored('Developer: AmirShamss10','red') )
