@@ -61,10 +61,3 @@ for i in range(1,100):
 driver.close()   
 print('FINISH')
 print(colored('Developer: AmirShamss10','red') )
-
-
-
-    
-    
-
-    
